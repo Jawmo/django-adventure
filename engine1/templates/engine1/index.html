@@ -1,0 +1,7 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'engine1/style.css' %}"/>
+<h1>GAMES</h1>
+    {% for game in game_list %}
+        <p><a href="/{{game.full_name}}">{{game.title}}</a></p> 
+    {% endfor %}
+    

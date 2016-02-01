@@ -1,0 +1,6 @@
+*.pyc
+*.sqlite3
+/engine1/migrations
+/venv
+/engine1/static
+advdb.dump adventuredb.dump

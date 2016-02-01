@@ -1,0 +1,11 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'engine1/style.css' %}"/>
+<h1>{{ box.full_name }}</h1>
+<p>{{box.desc}}</p>
+<form method="POST" action=""/>
+{% csrf_token %}
+<label>>></label>
+<input type="hidden" value="{{box.abbrev}}" name="scene_name"/>
+<input type="text" name="textfield" autofocus="autofocus" autocomplete="off" label=">>">
+</form>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
